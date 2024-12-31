@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELECTRONIC STORE</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ELECTRONIC STORE</h1>
+
+        <!-- Form Pencarian -->
+        <form id="searchForm">
+            <label for="searchOption">Cari Berdasarkan:</label>
+            <select id="searchOption">
+                <option value="1">Harga</option>
+                <option value="2">Nama Produk</option>
+            </select>
+            <input type="text" id="searchInput" placeholder="Masukkan harga atau nama produk">
+            <button type="submit">Cari</button>
+        </form>
+
+        <!-- Hasil Pencarian -->
+        <div id="searchResults">
+            <h3>Hasil Pencarian</h3>
+        </div>
+
+        <!-- Daftar Produk -->
+        <div id="productList"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
